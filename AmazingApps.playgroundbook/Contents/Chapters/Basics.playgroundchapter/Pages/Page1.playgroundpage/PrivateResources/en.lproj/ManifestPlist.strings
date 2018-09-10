@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CopyCommandButtonTitle</key>
+	<string>Copy My Code From the Last Page</string>
+	<key>DefaultCommandButtonTitle</key>
+	<string>Start Coding on This Page</string>
+	<key>Name</key>
+	<string>Backgrounds &amp; Labels</string>
+	<key>NavigateCommandButtonTitle</key>
+	<string>Return to Previous Page</string>
+	<key>NotReadyToCopyInstructions</key>
+	<string>Be sure to complete the previous page before you move on to solving the next step.</string>
+	<key>ReadyToCopyInstructions</key>
+	<string>You can bring over your algorithm from the previous page to continue improving it.</string>
+</dict>
+</plist>
