@@ -19,31 +19,10 @@ import PlaygroundSupport
 class ViewController: UIViewController {
     override func viewDidLoad() {
         
-        //#-copy-source(id1)
-        /***************************************************
-         Exercise 1:
-            Lets create a background and set its color.
-         ***************************************************/
-        
-        //#-editable-code
-        //#-end-editable-code
-        
-        /***************************************************
-         Exercise 2:
-         Lets create a label for our background and add some
-         text.
-         ***************************************************/
-        
-        //#-editable-code
-        //#-end-editable-code
-        //#-end-copy-source
+
     }
 }
 
-
-//: [Next](@next)
-
 //#-hidden-code
 PlaygroundPage.current.liveView = ViewController()
-PlaygroundPage.current.assessmentStatus = .pass(message: "Great job!")
 //#-end-hidden-code
