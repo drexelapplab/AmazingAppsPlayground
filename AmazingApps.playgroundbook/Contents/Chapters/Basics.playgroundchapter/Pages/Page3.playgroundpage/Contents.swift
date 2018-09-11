@@ -9,7 +9,6 @@
  - Create a background view
  - Change background view's color
  - Add a label to the background view
- - Add buttons that trigger audio samples to the project
  */
 //#-hidden-code
 import UIKit
@@ -18,20 +17,21 @@ import PlaygroundSupport
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
-
+        
         /***************************************************
-         Exercise 1:
-         Let's create a background and set its color.
+         Exercise 3:
+         Let's add a button to trigger an audio sample.
+         Once you have added a button, see if you can add
+         three more with different audio samples.
          ***************************************************/
         
-        //#-copy-source(id1)
         //#-editable-code
+        //#-copy-destination("Page2", id2)
+        //#-end-copy-destination
         //#-end-editable-code
-        //#-end-copy-source
+        
     }
 }
-
-//: [Go To The Next Page](@next)
 
 //#-hidden-code
 PlaygroundPage.current.liveView = ViewController()

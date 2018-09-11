@@ -18,25 +18,25 @@ import PlaygroundSupport
 class ViewController: UIViewController {
     override func viewDidLoad() {
         
-        //#-copy-destination("Page1", id1)
-        
-        //#-editable-code
         /***************************************************
          Exercise 2:
-         Lets create a label for our background and add some
+         Let's create a label for our background and add some
          text.
          ***************************************************/
         
+        //#-copy-source(id2)
         //#-editable-code
-        //#-end-editable-code
-        
-        
+        //#-copy-destination("Page1", id1)
         //#-end-copy-destination
         //#-end-editable-code
+        //#-end-copy-source
         
     }
 }
 
+//: [Go To The Next Page](@next)
+
 //#-hidden-code
 PlaygroundPage.current.liveView = ViewController()
+PlaygroundPage.current.assessmentStatus = .pass(message: "Great job! Scroll to the bottom of your code to find the button to take you to the next page.")
 //#-end-hidden-code
