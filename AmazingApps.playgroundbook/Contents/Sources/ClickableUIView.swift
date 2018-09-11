@@ -2,11 +2,26 @@ import Foundation
 import UIKit
 import AVFoundation
 
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
+    
+    convenience init(netHex:Int) {
+        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
+    }
+}
+
 public class ClickableUIView: UIView {
     
     var highlightColor = UIColor.cyan
     var defaultColor = UIColor.blue
     var player = AVAudioPlayer()
+    
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -49,7 +64,18 @@ public class ClickableUIView: UIView {
         }catch {
             print("Something went wrong with the audio player")
         }
-        
+    }
+    
+    public func setLoopCount(count: Int) {
+        if count == 40 {
+            self.player.numberOfLoops = -1
+        }
+        else if count == 0 {
+            self.player.numberOfLoops = 1
+        }
+        else {
+            self.player.numberOfLoops = count
+        }
     }
     
 }
