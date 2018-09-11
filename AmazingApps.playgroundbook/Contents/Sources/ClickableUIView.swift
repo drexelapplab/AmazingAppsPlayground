@@ -8,7 +8,7 @@ public class ClickableUIView: UIView {
     var defaultColor = UIColor.blue
     var player = AVAudioPlayer()
     
-    init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     

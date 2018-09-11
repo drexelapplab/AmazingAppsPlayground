@@ -30,12 +30,6 @@ class ViewController: UIViewController {
         bigSquare.backgroundColor = UIColor.brown
         view.addSubview(bigSquare)
         
-        /*
-         var myLabel = UILabel(frame: CGRect(x: 20, y: 200, width: 200, height: 30))
-         myLabel.text = "Hello World"
-         view.addSubview(myLabel)
-         */
-        
         var myButton = ClickableUIView(frame: CGRect(x: 5, y: 5, width: 200, height: 275))
         let kickSound = Bundle.main.url(forResource: "kick", withExtension: "wav")
         myButton.backgroundColor = UIColor.clear
@@ -114,31 +108,7 @@ class ViewController: UIViewController {
         let snareImageview = UIImageView(image: snareImage)
         snareImageview.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         myButton4.addSubview(snareImageview)
-        //#-copy-source(id1)
-        /***************************************************
-         Exercise 1:
-            Lets create a background and set its color.
-         ***************************************************/
-        
-        //#-editable-code
-        //#-end-editable-code
-        
-        /***************************************************
-         Exercise 2:
-         Lets create a label for our background and add some
-         text.
-         ***************************************************/
-        
-        //#-editable-code
-        //#-end-editable-code
-        //#-end-copy-source
     }
 }
 
-
-//: [Next](@next)
-
-//#-hidden-code
 PlaygroundPage.current.liveView = ViewController()
-PlaygroundPage.current.assessmentStatus = .pass(message: "Great job!")
-//#-end-hidden-code
