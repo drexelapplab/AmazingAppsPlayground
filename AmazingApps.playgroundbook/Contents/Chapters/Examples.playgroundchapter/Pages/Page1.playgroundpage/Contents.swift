@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         view.addSubview(bigSquare)
         
         var myButton = ClickableUIView(frame: CGRect(x: 5, y: 5, width: 200, height: 275))
-        let kickSound = Bundle.main.url(forResource: "kick", withExtension: "wav")
+        let kickSound = Bundle.main.url(forResource: "Example1/kick", withExtension: "wav")
         myButton.backgroundColor = UIColor.clear
         
         myButton.setupAudioPlayer(path: kickSound!)
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         view.addSubview(myButton)
         
         var myButton2 = ClickableUIView(frame: CGRect(x: 225, y: 5, width: 200, height: 275))
-        let cymbalSound = Bundle.main.url(forResource: "cymbal", withExtension: "wav")
+        let cymbalSound = Bundle.main.url(forResource: "Example1/cymbal", withExtension: "wav")
         myButton2.backgroundColor = UIColor.clear
         
         myButton2.setupAudioPlayer(path: cymbalSound!)
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         view.addSubview(myButton2)
         
         var myButton3 = ClickableUIView(frame: CGRect(x: 5, y: 290, width: 200, height: 275))
-        let hatSound = Bundle.main.url(forResource: "hat", withExtension: "wav")
+        let hatSound = Bundle.main.url(forResource: "Example1/hat", withExtension: "wav")
         myButton3.backgroundColor = UIColor.clear
         
         myButton3.setupAudioPlayer(path: hatSound!)
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         view.addSubview(myButton3)
         
         var myButton4 = ClickableUIView(frame: CGRect(x: 225, y: 290, width: 200, height: 275))
-        let snareSound = Bundle.main.url(forResource: "snare", withExtension: "wav")
+        let snareSound = Bundle.main.url(forResource: "Example1/snare", withExtension: "wav")
         myButton4.backgroundColor = UIColor.clear
         
         myButton4.setupAudioPlayer(path: snareSound!)
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         view.addSubview(myButton4)
         
         var myButton5 = ClickableUIView(frame: CGRect(x: 125, y: 500, width: 200, height: 100))
-        let freshSound = Bundle.main.url(forResource: "Julian_FreshPrince", withExtension: "wav")
+        let freshSound = Bundle.main.url(forResource: "Example1/Julian_FreshPrince", withExtension: "wav")
         myButton5.backgroundColor = UIColor.clear
         
         myButton5.setupAudioPlayer(path: freshSound!)
@@ -89,22 +89,22 @@ class ViewController: UIViewController {
         
         view.addSubview(myButton5)
         
-        let kickImage = UIImage(named: "otherkick.JPG")
+        let kickImage = UIImage(named: "Example1/otherkick.JPG")
         let kickImageview = UIImageView(image: kickImage)
         kickImageview.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         myButton.addSubview(kickImageview)
         
-        let cymbalImage = UIImage(named: "cymbal.PNG")
+        let cymbalImage = UIImage(named: "Example1/cymbal.PNG")
         let cymbalImageView = UIImageView(image: cymbalImage)
         cymbalImageView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         myButton2.addSubview(cymbalImageView)
         
-        let othercymbalImage = UIImage(named: "oldcymbal.PNG")
+        let othercymbalImage = UIImage(named: "Example1/oldcymbal.PNG")
         let othercymbalImageview = UIImageView(image: othercymbalImage)
         othercymbalImageview.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         myButton3.addSubview(othercymbalImageview)
         
-        let snareImage = UIImage(named: "snare.PNG")
+        let snareImage = UIImage(named: "Example1/snare.PNG")
         let snareImageview = UIImageView(image: snareImage)
         snareImageview.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         myButton4.addSubview(snareImageview)

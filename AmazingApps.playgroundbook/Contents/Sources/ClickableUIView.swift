@@ -48,8 +48,18 @@ public class ClickableUIView: UIView {
             player = try AVAudioPlayer(contentsOf: path)
         }catch {
             print("Something went wrong with the audio player")
-        }
-        
+        }}
+       public func setLoopCount(count: Int) {
+            if count == 40 {
+                self.player.numberOfLoops = -1
+            }
+            else if count == 0 {
+                self.player.numberOfLoops = 1
+            }
+            else {
+                self.player.numberOfLoops = count
+            }
     }
     
 }
+
