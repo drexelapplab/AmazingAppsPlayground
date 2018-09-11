@@ -7,7 +7,11 @@ public class ClickableUIView: UIView {
     var highlightColor = UIColor.cyan
     var defaultColor = UIColor.blue
     var player = AVAudioPlayer()
-        
+    
+    init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
     init(frame: CGRect, defaultColor: UIColor, highlightColor: UIColor) {
         super.init(frame: frame)
         self.defaultColor = defaultColor
