@@ -1,24 +1,34 @@
+/*:
+ 
+ #Maracas
+ 
+ This Swift Playground Application utilizes the iPad's built in accelerometer to detect motion and produces different sounds depending on the orientation of the movement. */
 
+//Libraries needed for this playground
 import CoreMotion
 import UIKit
 import PlaygroundSupport
 import AVFoundation
 
+//Sets up variables needed for this playground
 class myClass:UIViewController{
     let motion = CMMotionManager()
     var timer: Timer!
     var maraca: AVAudioPlayer?
     var coin: AVAudioPlayer?
     
+    //creates a white background
     override func loadView() {
         timer = Timer()
         view = UIView()
         view.backgroundColor = UIColor.white
         self.view = view
+        //assigns image data to a variable
         let maracaImage = UIImage(named: "Example3/maracas.PNG")
+        //visualizes image variable and places it in the middle of the screen
         let maracaImageview = UIImageView(image: maracaImage)
         maracaImageview.frame = CGRect(x: 242, y: 200, width: 200, height: 200)
-        
+        //turns on accelerometer readings
         startAccelerometers()
         
     }
@@ -27,6 +37,7 @@ class myClass:UIViewController{
         let image = UIImage(named: "Example3/maracas.png")
         let imageView = UIImageView(frame: CGRect(x:10, y:25, width: 400, height: 400))
         imageView.image = image
+        //SUPER IMPORTANT: ADDS MARACA IMAGE TO PLAYGROUND
         self.view.addSubview(imageView)
     }
     

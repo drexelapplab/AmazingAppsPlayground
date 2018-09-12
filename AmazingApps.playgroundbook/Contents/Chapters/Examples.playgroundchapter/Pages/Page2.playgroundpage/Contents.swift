@@ -1,40 +1,41 @@
 /*:
  
- # Amazing Apps
+ # Emoji Samples
  
- The Amazing Apps project allows students to develop simple applications using Swift Playgrounds, an iPad app that provides a coding environment where users can see the results of their work directly on the device. Swift Playgrounds allows students to program using the Swift programming language, the tool that many app developers use to build iOS apps currently available on the App Store.
- 
-
- Goals for this chapter:
- - Create a background view
- - Change background view's color
- - Add a label to the background view
+This Swift Playground Application is a soundpad with prerecorded samples assigned to a variety of appropirate emojis.
  */
-//#-hidden-code
+
+//Libraries imported
 import UIKit
 import PlaygroundSupport
-//#-end-hidden-code
 
+//sets up a white background
 class ViewController: UIViewController {
     override func viewDidLoad() {
         
         view = UIView()
         view.backgroundColor = UIColor.white
         self.view = view
-        //a var//
         
+        
+        //creates a button in the top left corner of the screen
         var myButton = ClickableUIView(frame: CGRect(x: 0, y: 0, width: 150, height: 150))
+        //assigns a sound file to a variable
         let kickSound = Bundle.main.url(forResource: "Example2/Jared_HighStrings11_FreshPrince", withExtension: "wav")
+        //sets background color of button
         myButton.backgroundColor = UIColor.white
+        //connects sound variable to button
         myButton.setupAudioPlayer(path: kickSound!)
-        myButton.setDefaultColor(defaultColor: UIColor.green)
-        myButton.setHighlightColor(highlightColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
+        //SUPER IMPORTANT: ADDS BUTTON TO PLAYGROUND
         view.addSubview(myButton)
         
+        //assigns image data to a variable
         let coolImage = UIImage(named: "Example2/IMG_0034.JPG")
+        //viualizes image data
         let coolimageview = UIImageView(image: coolImage)
+        //sets place for image
         coolimageview.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
-        
+        //adds image to playground
         myButton.addSubview(coolimageview)
         
         
@@ -42,8 +43,6 @@ class ViewController: UIViewController {
         let supSound = Bundle.main.url(forResource: "Example2/Jared_HighStrings22_FreshPrince", withExtension: "wav")
         myButton2.backgroundColor = UIColor.purple
         myButton2.setupAudioPlayer(path: supSound!)
-        myButton2.setDefaultColor(defaultColor: UIColor.green)
-        myButton2.setHighlightColor(highlightColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
         view.addSubview(myButton2)
         
         let coolImage2 = UIImage(named: "Example2/IMG_0034.JPG")
@@ -51,16 +50,15 @@ class ViewController: UIViewController {
         coolimage2view.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
         myButton2.addSubview(coolimage2view)
         
+        //creates a label
         var myLabel3 = UILabel(frame: CGRect(x:360 ,y: 480, width: 300, height: 15))
+        //content of label
         myLabel3.text = "$$$$$$"
+        //adds label to the playground
         view.addSubview(myLabel3)
         
         var myButton3 = ClickableUIView(frame: CGRect(x: 0, y: 410, width: 150, height: 150))
         let laughSound = Bundle.main.url(forResource: "Example2/laugh", withExtension: "mp3")
-        myButton3.backgroundColor = UIColor.clear
-        myButton3.setupAudioPlayer(path: laughSound!)
-        myButton3.setDefaultColor(defaultColor: UIColor.clear)
-        myButton3.setHighlightColor(highlightColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
         view.addSubview(myButton3)
         
         let funnyImage = UIImage(named: "Example2/IMG_0030.JPG")
@@ -73,8 +71,6 @@ class ViewController: UIViewController {
         let cashSound = Bundle.main.url(forResource: "Example2/cash", withExtension: "wav")
         myButton4.backgroundColor = UIColor.clear
         myButton4.setupAudioPlayer(path: cashSound!)
-        myButton4.setDefaultColor(defaultColor: UIColor.clear)
-        myButton4.setHighlightColor(highlightColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
         view.addSubview(myButton4)
         
         let moneyImage = UIImage(named: "Example2/IMG_0029.PNG")
@@ -129,7 +125,4 @@ class ViewController: UIViewController {
         
     }
 }
-
-//#-hidden-code
 PlaygroundPage.current.liveView = ViewController()
-//#-end-hidden-code

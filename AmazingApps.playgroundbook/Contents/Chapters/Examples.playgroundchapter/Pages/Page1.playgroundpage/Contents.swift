@@ -1,27 +1,23 @@
 /*:
  
- # Amazing Apps
+ # Drumkit Touch Pad
  
- The Amazing Apps project allows students to develop simple applications using Swift Playgrounds, an iPad app that provides a coding environment where users can see the results of their work directly on the device. Swift Playgrounds allows students to program using the Swift programming language, the tool that many app developers use to build iOS apps currently available on the App Store.
- 
-
- Goals for this chapter:
- - Create a background view
- - Change background view's color
- - Add a label to the background view
+ This Swift Playgrounds Application imports pictures of different drums and overlays buttons on these pictures so that when a drum is pressed the corresponding drum sound that was linked to the button is played.
  
  */
-//#-hidden-code
+
+//Libraries imported
 import UIKit
 import PlaygroundSupport
-//#-end-hidden-code
 
+//Sets up a white background
 class ViewController: UIViewController {
     override func viewDidLoad() {
         view = UIView()
         view.backgroundColor = UIColor.white
         self.view = view
         
+        //Makes squares with dimensions and colors respectively
         var mySquare = UIView(frame: CGRect(x: 50, y: 100, width: 75, height: 75))
         mySquare.backgroundColor = UIColor.white
         view.addSubview(mySquare)
@@ -30,16 +26,19 @@ class ViewController: UIViewController {
         bigSquare.backgroundColor = UIColor.brown
         view.addSubview(bigSquare)
         
+        //Creates a button in the top left corner
         var myButton = ClickableUIView(frame: CGRect(x: 5, y: 5, width: 200, height: 275))
+        //assigns kick drum sound to a variable
         let kickSound = Bundle.main.url(forResource: "Example1/kick", withExtension: "wav")
+        //sets button color
         myButton.backgroundColor = UIColor.clear
-        
+        //connects button to sound variable
         myButton.setupAudioPlayer(path: kickSound!)
-        
+        //sets button when pressed and unpressed
         myButton.setDefaultColor(defaultColor: UIColor.clear)
-        
+
         myButton.setHighlightColor(highlightColor: UIColor.clear)
-        
+        //SUPER IMPORTANT: ADDS BUTTON TO PLAYGROUND
         view.addSubview(myButton)
         
         var myButton2 = ClickableUIView(frame: CGRect(x: 225, y: 5, width: 200, height: 275))
@@ -77,21 +76,14 @@ class ViewController: UIViewController {
         
         view.addSubview(myButton4)
         
-        var myButton5 = ClickableUIView(frame: CGRect(x: 125, y: 500, width: 200, height: 100))
-        let freshSound = Bundle.main.url(forResource: "Example1/Julian_FreshPrince", withExtension: "wav")
-        myButton5.backgroundColor = UIColor.clear
         
-        myButton5.setupAudioPlayer(path: freshSound!)
-        
-        myButton5.setDefaultColor(defaultColor: UIColor.clear)
-        myButton5.setHighlightColor(highlightColor: UIColor.clear)
-        
-        
-        view.addSubview(myButton5)
-        
+        //loads image data to a variable
         let kickImage = UIImage(named: "Example1/otherkick.JPG")
+        //displays variable
         let kickImageview = UIImageView(image: kickImage)
+        //sets area for image
         kickImageview.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        //adds image to button
         myButton.addSubview(kickImageview)
         
         let cymbalImage = UIImage(named: "Example1/cymbal.PNG")
@@ -110,5 +102,5 @@ class ViewController: UIViewController {
         myButton4.addSubview(snareImageview)
     }
 }
-
+//Must have this line for Playground to work
 PlaygroundPage.current.liveView = ViewController()
