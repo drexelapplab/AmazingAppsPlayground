@@ -35,5 +35,5 @@ class ViewController: UIViewController {
 
 //#-hidden-code
 PlaygroundPage.current.liveView = ViewController()
-PlaygroundPage.current.assessmentStatus = .pass(message: "Great job! Scroll to the bottom of your code to find the button to take you to the next page.")
+PlaygroundPage.current.assessmentStatus = .pass(message: "Great job! Now go check out the chapter containing examples from previous SMT students.")
 //#-end-hidden-code
