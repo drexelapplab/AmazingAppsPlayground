@@ -57,6 +57,10 @@ public class ClickableUIView: UIView {
         self.defaultColor = defaultColor
     }
     
+    public func setLoopCount(count: Int) {
+        player.setLoopCount
+    }
+    
     public func setupAudioPlayer(path: Foundation.URL) {
 
         do {
