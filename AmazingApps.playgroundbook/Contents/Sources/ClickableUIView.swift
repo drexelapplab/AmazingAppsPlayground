@@ -58,7 +58,15 @@ public class ClickableUIView: UIView {
     }
     
     public func setLoopCount(count: Int) {
-        player.setLoopCount
+        if count == 40 {
+            self.player.numberOfLoops = -1
+        }
+        else if count == 0 {
+            self.player.numberOfLoops = 1
+        }
+        else {
+            self.player.numberOfLoops = count + 1
+        }
     }
     
     public func setupAudioPlayer(path: Foundation.URL) {
