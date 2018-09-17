@@ -1,15 +1,8 @@
 /*:
+ # Backgrounds
  
- # Amazing Apps
+ On this page, we will be setting up a background for our application.
  
- The Amazing Apps project allows students to develop simple applications using Swift Playgrounds, an iPad app that provides a coding environment where users can see the results of their work directly on the device. Swift Playgrounds allows students to program using the Swift programming language, the tool that many app developers use to build iOS apps currently available on the App Store.
- 
-
- Goals for this chapter:
- - Create a background view
- - Change background view's color
- - Add a label to the background view
- - Add buttons that trigger audio samples to the project
  */
 //#-hidden-code
 import UIKit

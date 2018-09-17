@@ -1,14 +1,8 @@
 /*:
+ # AmazingApps
+ ## Buttons
  
- # Amazing Apps
- 
- The Amazing Apps project allows students to develop simple applications using Swift Playgrounds, an iPad app that provides a coding environment where users can see the results of their work directly on the device. Swift Playgrounds allows students to program using the Swift programming language, the tool that many app developers use to build iOS apps currently available on the App Store.
- 
-
- Goals for this chapter:
- - Create a background view
- - Change background view's color
- - Add a label to the background view
+ We want users to be able to interact with our applications, so let's add some buttons that trigger audio samples. These buttons are created using the ClickableUIView() object. This is a custom built class that triggers an audio sample when pressed.
  */
 //#-hidden-code
 import UIKit

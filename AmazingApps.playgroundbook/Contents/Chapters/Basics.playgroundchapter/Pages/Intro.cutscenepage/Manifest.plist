@@ -5,13 +5,8 @@
 	<key>Version</key>
 	<string>1.0</string>
 	<key>Name</key>
-	<string>Basics</string>
-	<key>Pages</key>
-	<array>
-		<string>Intro.cutscenepage</string>
-		<string>Page1.playgroundpage</string>
-		<string>Page2.playgroundpage</string>
-		<string>Page3.playgroundpage</string>
-	</array>
+	<string>Introduction</string>
+	<key>CutsceneReference</key>
+	<string>Intro/Intro.html</string>
 </dict>
 </plist>

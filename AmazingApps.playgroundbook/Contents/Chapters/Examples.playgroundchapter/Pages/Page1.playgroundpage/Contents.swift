@@ -28,16 +28,20 @@ class ViewController: UIViewController {
         
         //Creates a button in the top left corner
         var myButton = ClickableUIView(frame: CGRect(x: 5, y: 5, width: 200, height: 275))
+        
         //assigns kick drum sound to a variable
         let kickSound = Bundle.main.url(forResource: "Example1/kick", withExtension: "wav")
+        
         //sets button color
         myButton.backgroundColor = UIColor.clear
+        
         //connects button to sound variable
         myButton.setupAudioPlayer(path: kickSound!)
+        
         //sets button when pressed and unpressed
         myButton.setDefaultColor(defaultColor: UIColor.clear)
-
         myButton.setHighlightColor(highlightColor: UIColor.clear)
+        
         //SUPER IMPORTANT: ADDS BUTTON TO PLAYGROUND
         view.addSubview(myButton)
         

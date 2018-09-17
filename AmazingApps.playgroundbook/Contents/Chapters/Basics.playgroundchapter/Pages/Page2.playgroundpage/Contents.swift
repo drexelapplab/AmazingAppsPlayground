@@ -1,14 +1,8 @@
 /*:
- 
  # Amazing Apps
+ ## Labels
  
- The Amazing Apps project allows students to develop simple applications using Swift Playgrounds, an iPad app that provides a coding environment where users can see the results of their work directly on the device. Swift Playgrounds allows students to program using the Swift programming language, the tool that many app developers use to build iOS apps currently available on the App Store.
- 
-
- Goals for this chapter:
- - Create a background view
- - Change background view's color
- - Add a label to the background view
+ Let's create a label to place on our background. Labels allow us to add text to our application. We'll also learn how the coordinate system for Swift Playgrounds works. Unlike coordinate systems you might see in a math class, the origin point (0,0) is located in the upper left corner of the screen. The X-Axis values increase as you move from left to right. The Y-Axis values increase as you move from top to bottom.
  */
 //#-hidden-code
 import UIKit
@@ -21,7 +15,8 @@ class ViewController: UIViewController {
         /***************************************************
          Exercise 2:
          Let's create a label for our background and add some
-         text.
+         text. Once you have made one label, see if you can
+         add another label in a different location.
          ***************************************************/
         
         //#-copy-source(id2)
