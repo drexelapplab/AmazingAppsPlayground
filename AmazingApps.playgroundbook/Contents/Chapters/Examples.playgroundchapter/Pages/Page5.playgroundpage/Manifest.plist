@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CodeCopySetup</key>
+	<dict>
+		<key>CopyCommandButtonTitle</key>
+		<string>Copy My Code From the Last Page</string>
+		<key>DefaultCommandButtonTitle</key>
+		<string>Start Fresh</string>
+		<key>NavigateCommandButtonTitle</key>
+		<string>Back to previous page</string>
+		<key>NotReadyToCopyInstructions</key>
+		<string>Finish the exercise before moving on to this page.</string>
+		<key>ReadyToCopyInstructions</key>
+		<string>Next Steps...</string>
+	</dict>
+	<key>Version</key>
+	<string>1.0</string>
+	<key>Name</key>
+	<string>Voice Effects</string>
+	<key>LiveViewMode</key>
+	<string>VisibleByDefault</string>
+	<key>LiveViewEdgeToEdge</key>
+	<true/>
+</dict>
+</plist>
