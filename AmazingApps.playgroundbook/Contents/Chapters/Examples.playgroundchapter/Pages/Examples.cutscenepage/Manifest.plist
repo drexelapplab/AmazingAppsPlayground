@@ -6,13 +6,7 @@
 	<string>1.0</string>
 	<key>Name</key>
 	<string>Examples</string>
-	<key>Pages</key>
-	<array>
-		<string>Examples.cutscenepage</string>
-		<string>Page1.playgroundpage</string>
-		<string>Page2.playgroundpage</string>
-		<string>Page3.playgroundpage</string>
-		<string>Page4.playgroundpage</string>
-	</array>
+	<key>CutsceneReference</key>
+	<string>Examples/Examples.html</string>
 </dict>
 </plist>
