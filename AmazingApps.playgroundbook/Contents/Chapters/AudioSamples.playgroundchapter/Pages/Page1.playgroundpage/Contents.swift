@@ -16,13 +16,13 @@ class MyClass : UIViewController {
         var x=20
         var y=50
         var indexer=0
-        let fileNames = ["backintime", "bleep", "chord1", "chord2", "coins", "kick1","kick2", "laser","powerup","scratch","tone","snare1","snare2","snare3","synth1","synth2","trump1","trump2","trump3","trump4","yo","Guitar A4","Guitar D4", "Guitar E4", "Guitar F#4","type","TrumpD","TrumpG","TrumpA","Applause","clap","jump","kick","space","plop","camera"]
+        let fileNames = ["chord1", "chord2","kick1","kick2", "snare1","snare2","snare3","synth1","synth2","synth3","TrumpD","TrumpG","TrumpA","Applause","clap","kick"]
         
         let listofiles = fileNames.map {Bundle.main.url(forResource: $0, withExtension: "wav")}
       
-        for i in 1 ... 6{
-            for j in 1 ... 6{
-                indexer=6*(j-1)+(i-1)
+        for i in 1 ... 4{
+            for j in 1 ... 4{
+                indexer=4*(j-1)+(i-1)
                 var sq = UIView(frame:CGRect( x:x, y:y, width:75, height: 75))
                 sq.backgroundColor=UIColor.gray
                 view.addSubview(sq)
@@ -44,7 +44,7 @@ class MyClass : UIViewController {
                 y += 100
                 
             };
-            y -= 600
+            y -= 400
             x += 80
         }
         
